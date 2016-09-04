@@ -2,6 +2,7 @@
 <html>
 
    <head>
+      <link rel="stylesheet" href="styles/style.css">
       <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
       <script src = "js/myapp.controller.js"></script>
    </head>
@@ -38,7 +39,12 @@
       </div>
 
 
-
+      <div>
+         <h2>
+            Lorem <input type="text" ng-model="Character1 " placeholder="Enter name of character 1"> ipsum <span style="text-transform:uppercase;color:red;">{{Character1}} </span>dolor sit amet, consectetur adipisicing elit. Dolore at aut, <input type="text" ng-model="Character2" placeholder="Enter name of character 2">error tempora asperiores <span style="text-transform:uppercase;color:red;">{{Character2}} </span>excepturi laborum corporis illo. <span style="text-transform:uppercase;color:red;">{{Character1}} </span>Deleniti, quisquam distinctio <span style="text-transform:uppercase;color:red;">{{Character1}} </span>omnis porro error doloribus reprehenderit veniam optio libero debitis?</br></br>
+         </h2>
+         <h3>The look in your eyes, I recognize it. You used to have it for me. I suggest you drop it, <span class="characterName">{{Character1}} </span>. Your shields were failing, sir. When has justice ever been as simple as a rule book? The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules. Ensign <span class="characterName">{{Character2}} </span>! Fate. It protects fools, little children, and ships named "Enterprise." A surprise party? <span class="characterName">{{Character2}} </span>, I hate surprise parties. I would *never* do that to you. Sorry, <span class="characterName">{{Character1}} </span>. Could someone survive inside a transporter buffer for 75 years? I'd like to think that I haven't changed those things, <span class="characterName">{{Character1}} </span>. This is not about revenge. This is about justice. Did you come here for something in particular or just general Riker-bashing? Some days you get the bear, and some days the bear gets you. Maybe if we felt any human loss as keenly as we feel one of those close to us, human history would be far less bloody. Travel time to the nearest starbase? Yes, absolutely, I do indeed concur, wholeheartedly! Computer, lights up! <span class="characterName">{{Character2}} </span>, why are we out here chasing comets? My oath is between Captain <span class="characterName">{{Character1}} </span> and myself. Your only concern is with how you obey my orders. Or do you prefer the rank of prisoner to that of lieutenant? What? We're not at all alike! Some days you get the bear, and some days the bear gets you.</h3>
+      </div>
 
 
    </body>
