@@ -2,6 +2,6 @@ body{
   background-color: lightblue;
 }
 .characterName{
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: red;
 }
