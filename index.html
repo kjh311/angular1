@@ -1,12 +1,13 @@
 <!doctype html>
-<html ng-app>
+<html>
 
    <head>
       <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+      <script src = "js/myapp.controller.js"></script>
    </head>
 
 
-   <body>
+   <body ng-app = "myapp" ng-init="firstname='Kevin';lastname=' McCool Pants'">
       <div>
          <label>Name:</label>
          <input type = "text" ng-model = "yourName" placeholder = "Enter a name here">
@@ -16,6 +17,29 @@
          <h1>Hello {{yourName}}!</h1>
          <h1>Hello {{bartender2}}!</h1>
       </div>
+
+      <div>
+         <h1>Hello {{firstname + lastname}}</h1>
+      </div>
+
+      <div ng-controller="Controller1">
+         <h2>{{myText}}</h2>
+      </div>
+
+
+
+       <div ng-controller = "HelloController" >
+         <h2>Welcome {{helloTo.title}} to the world of Tutorialspoint!</h2>
+      </div>
+
+      <div ng-controller = "Controller1">
+         <h1>Welcome {{fuckityfuck.blah}}</h1>
+
+      </div>
+
+
+
+
 
    </body>
 </html>
