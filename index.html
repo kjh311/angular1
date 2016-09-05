@@ -39,6 +39,45 @@
 
        <div ng-controller = "HelloController" >
          <h2>Welcome {{helloTo.title}} to the world of Tutorialspoint!</h2>
+
+      </br>
+      </br>
+         <label>Enter first name: </label>
+         <input type="text" ng-model="student.firstName"></br>
+         <label>Enter last name: </label>
+         <input type="text" ng-model="student.lastName"></br>
+         <p>You are entering: {{student.fullName() | uppercase}}</p></br>
+         <p>Student fees: {{student.fees | currency}}</p>
+         <p>Student books: {{student.books | currency}}</p>
+         <p>Student fees and books: {{student.books + student.books | currency}}</p>
+      </br>
+      </br>
+      </br>
+      </br>
+      <table border="0">
+         <tr>
+            <td>Name in uppercase </td><td>{{student.fullName() | uppercase}}</td>
+         </tr>
+         <tr>
+            <td>Name in lowercase: </td><td>{{student.fullName() | lowercase}}</td>
+         </tr>
+         <tr>
+            <td>Fees: </td><td>{{student.fees + student.books | currency}}</td>
+         </tr>
+         <tr>
+            <td>Subject: </td>
+
+            <td>
+               <ul>
+                  <li ng-repeat="subject in student.subjects | filter: subjectName | orderBy: 'marks'">
+                     {{subject.name + ', marks:' + subject.marks}}
+                  </li>
+
+               </ul>
+            </td>
+         </tr>
+
+      </table>
       </div>
 
       <div ng-controller = "Controller1">
